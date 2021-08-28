@@ -1,0 +1,4 @@
+# Write your MySQL query statement below
+select max(Salary) as SecondHighestSalary from Employee 
+#order by Salary desc
+WHERE Salary!=(SELECT MAX(Salary) FROM Employee);
